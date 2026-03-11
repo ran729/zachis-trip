@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zachi's Bachelor Trip — Austria 2026 🇦🇹</title>
+    <meta name="description" content="Interactive travel guide for Zachi Baran's bachelor trip to Austria, April 21-26, 2026. 13 bros, 1 epic adventure.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section id="hero">
+        <div class="hero-rays"></div>
+        <div class="halftone-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">🎉 BACHELOR TRIP 2026 🎉</div>
+            <h1>ZACHI'S<br>BACHELOR<br>TRIP</h1>
+            <h2>AUSTRIA EDITION 🇦🇹</h2>
+            <p class="hero-tagline">13 Bros • 1 Epic Adventure • Infinite Beers</p>
+            <p class="hero-dates">April 21–26, 2026</p>
+            <button id="start-btn" class="comic-btn" onclick="startAdventure()">
+                START THE ADVENTURE!
+                <span class="btn-pow">💥</span>
+            </button>
+            <div class="scroll-hint">
+                <span>▼</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MAIN APP ===== -->
+    <div id="app">
+        <!-- Navigation -->
+        <nav id="main-nav">
+            <div class="nav-brand" onclick="navigateTo('overview')">🇦🇹 ZACHI'S TRIP</div>
+            <div class="nav-scroll" id="nav-tabs">
+                <!-- Rendered by JS -->
+            </div>
+        </nav>
+
+        <!-- Map Section -->
+        <div id="map-section">
+            <div id="map"></div>
+            <button id="animate-btn" class="comic-btn small" onclick="triggerDriveAnimation()">
+                🚐 DRIVE!
+            </button>
+            <div id="map-day-label" class="map-label"></div>
+        </div>
+
+        <!-- Content Area -->
+        <main id="content">
+            <!-- Rendered dynamically by app.js -->
+        </main>
+
+        <!-- Footer -->
+        <footer id="app-footer">
+            <div class="footer-content">
+                <p class="footer-text">Made with 💛 for Zachi's Bachelor Trip</p>
+                <p class="footer-sub">Austria 2026 🇦🇹 • 13 Bros • 1 Epic Adventure</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
