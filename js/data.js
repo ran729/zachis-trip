@@ -10,18 +10,18 @@ const TRIP = {
 
   // ---- PARTICIPANTS ----
   participants: [
-    { name: "Zachi Baran", nickname: "Bridezilla", emoji: "👑", role: "The one getting hitched" },
+    { name: "Zachi Baran", nickname: "Bridezilla", emoji: "👑", role: "Another one bites the dust" },
     { name: "Ran Sasportas", nickname: "The Navigator", emoji: "🧭", role: "Chief route planner" },
     { name: "Amit Solomon", nickname: "The Wise Guy", emoji: "🧠", role: "Group philosopher" },
-    { name: "Naor Ohana", nickname: "Captain Ohana", emoji: "🎵", role: "Road trip DJ" },
-    { name: "Eden Cohen", nickname: "Tuli Gadol", emoji: "🌿", role: "Nature enthusiast" },
-    { name: "Sagi Moskovich", nickname: "The Lawyer", emoji: "🐻", role: "Group strongman" },
+    { name: "Naor Ohana", nickname: "Captain Naor", emoji: "🎵", role: "Karaoke finder" },
+    { name: "Eden Cohen", nickname: "Tuli Gadol", emoji: "🌿", role: "MD supplier" },
+    { name: "Sagi Moskovich", nickname: "The Lawyer", emoji: "🐻", role: "The Fixer" },
     { name: "Guy Zuri", nickname: "Yolo Guy", emoji: "😎", role: "The chillest dude" },
-    { name: "Yakir Osi", nickname: "Mountain Yak", emoji: "🏔️", role: "Summit specialist" },
+    { name: "Yakir Osi", nickname: "Mountain Yak", emoji: "🏔️", role: "Car rental guy" },
     { name: "Tomer", nickname: "Palm Tree", emoji: "🌴", role: "Standing tall" },
-    { name: "Shaked Hare", nickname: "Shaaaaked", emoji: "🐇", role: "Speed demon" },
-    { name: "Aviv Shay", nickname: "Bitchez", emoji: "☀️", role: "Party organizer" },
-    { name: "Ori Wohl", nickname: "Football Ori", emoji: "🦁", role: "Fearless leader" }
+    { name: "Shaked Hare", nickname: "Shaaaaked", emoji: "🐇", role: "Make everyone sleep better" },
+    { name: "Aviv Shay", nickname: "Bitchez", emoji: "☀️", role: "Bring the bitchez" },
+    { name: "Ori Wohl", nickname: "Football Ori", emoji: "🦁", role: "Fearless strongman" }
   ],
 
   // ---- FLIGHTS ----

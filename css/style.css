@@ -341,7 +341,12 @@ p {
   min-height: 300px;
   max-height: 500px;
   border-bottom: 4px solid var(--comic-black);
+  box-shadow: 0 4px 0 0 var(--comic-yellow);
   background: var(--comic-black);
+}
+
+.ripped-edge {
+  display: none;
 }
 
 #map {

@@ -42,7 +42,6 @@ function buildNavTabs() {
   const tabs = [
     { id: 'overview', label: '🗺️ Overview' },
     ...TRIP.days.map(d => ({ id: `day-${d.id}`, label: `${d.icon} Day ${d.id}` })),
-    { id: 'crew', label: '👥 Crew' },
     { id: 'summary', label: '📋 Summary' }
   ];
 
@@ -82,8 +81,9 @@ function navigateTo(viewId) {
     renderOverview();
     showOverview();
   } else if (viewId === 'crew') {
-    renderCrew();
-    showOverview();
+    // Crew merged into overview — redirect
+    navigateTo('overview');
+    return;
   } else if (viewId === 'summary') {
     renderSummary();
     showOverview();
@@ -128,6 +128,24 @@ function renderOverview() {
   });
 
   html += '</div>';
+
+  // ---- CREW SECTION (merged into overview) ----
+  html += `
+    <h3 class="section-title" style="margin-top:40px"><span class="title-icon">👥</span> THE CREW</h3>
+    <div class="crew-grid">
+  `;
+  TRIP.participants.forEach((p, i) => {
+    html += `
+      <div class="crew-card" style="animation-delay:${i * 0.04}s">
+        <span class="crew-emoji">${p.emoji}</span>
+        <div class="crew-name">${p.name}</div>
+        <div class="crew-nickname">"${p.nickname}"</div>
+        <div class="crew-role">${p.role}</div>
+      </div>
+    `;
+  });
+  html += '</div>';
+
   content.innerHTML = html;
 }
 
