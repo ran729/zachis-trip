@@ -11,17 +11,17 @@ const TRIP = {
   // ---- PARTICIPANTS ----
   participants: [
     { name: "Zachi Baran", nickname: "Bridezilla", emoji: "👑", role: "Another one bites the dust" },
-    { name: "Ran Sasportas", nickname: "The Navigator", emoji: "🧭", role: "Chief route planner" },
-    { name: "Amit Solomon", nickname: "The Wise Guy", emoji: "🧠", role: "Group philosopher" },
+    { name: "Ran Sasportas", nickname: "the ninja", emoji: "🥷", role: "Chief route planner" },
+    { name: "Amit Solomon", nickname: "the brain", emoji: "🧠", role: "Group philosopher" },
     { name: "Naor Ohana", nickname: "Captain Naor", emoji: "🎵", role: "Karaoke finder" },
-    { name: "Eden Cohen", nickname: "Tuli Gadol", emoji: "🌿", role: "MD supplier" },
-    { name: "Sagi Moskovich", nickname: "The Lawyer", emoji: "🐻", role: "The Fixer" },
-    { name: "Guy Zuri", nickname: "Yolo Guy", emoji: "😎", role: "The chillest dude" },
-    { name: "Yakir Osi", nickname: "Mountain Yak", emoji: "🏔️", role: "Car rental guy" },
-    { name: "Tomer", nickname: "Palm Tree", emoji: "🌴", role: "Standing tall" },
-    { name: "Shaked Hare", nickname: "Shaaaaked", emoji: "🐇", role: "Make everyone sleep better" },
-    { name: "Aviv Shay", nickname: "Bitchez", emoji: "☀️", role: "Bring the bitchez" },
-    { name: "Ori Wohl", nickname: "Football Ori", emoji: "🦁", role: "Fearless strongman" }
+    { name: "Eden Cohen", nickname: "the tour guide", emoji: "🗺️", role: "MD supplier" },
+    { name: "Sagi Moskovich", nickname: "the string-puller", emoji: "🎭", role: "The Fixer" },
+    { name: "Guy Zuri", nickname: "mindfulness", emoji: "🧘", role: "The chillest dude" },
+    { name: "Yakir Osi", nickname: "the economist", emoji: "📈", role: "Car rental guy" },
+    { name: "Tomer", nickname: "loverboy", emoji: "🌹", role: "Standing tall" },
+    { name: "Shaked Hare", nickname: "quickie", emoji: "⚡", role: "Make everyone sleep better" },
+    { name: "Aviv Shay", nickname: "the manager", emoji: "📋", role: "Bring the bitchez" },
+    { name: "Niv Leibovitch", nickname: "the uzi", emoji: "🔫", role: "Fearless strongman" }
   ],
 
   // ---- FLIGHTS ----
@@ -81,12 +81,16 @@ const TRIP = {
       summary: "Fly from Tel Aviv to Vienna. Check in at The Social Hub. Explore the city, grab dinner, and get ready for the road trip of a lifetime!",
       route: [
         { name: "Vienna Airport (VIE)", coords: [48.110, 16.570], icon: "🛬", type: "airport" },
-        { name: "The Social Hub Vienna", coords: [48.185, 16.378], icon: "🏨", type: "hotel" }
+        { name: "The Social Hub Vienna", coords: [48.185, 16.378], icon: "🏨", type: "hotel" },
+        { name: "Salm Bräu", coords: [48.194, 16.382], icon: "🍺", type: "food" },
+        { name: "Puerstner", coords: [48.205, 16.375], icon: "🍽️", type: "food" },
+        { name: "1516 Brewing Company", coords: [48.204, 16.371], icon: "🍻", type: "food" }
       ],
       activities: [
         { time: "Afternoon", title: "Land in Vienna", description: "Welcome to Austria! 🇦🇹 Grab your bags and get moving!", icon: "🛬", type: "travel" },
         { time: "Evening", title: "Check in & Explore", description: "Drop bags at The Social Hub, hit the streets of Vienna", icon: "🏨", type: "accommodation" },
-        { time: "Night", title: "First Night Out", description: "Dinner & drinks in Vienna — the bachelor trip starts NOW!", icon: "🍻", type: "food" }
+        { time: "Night", title: "Dinner & Drinks - 3 Epic Choices", description: "Choose your vibe: 1. Salm Bräu (Brewery near Belvedere), 2. Puerstner (Traditional Viennese), 3. 1516 Brewing Company (Lively craft brewpub)", icon: "🍻", type: "food" },
+        { time: "Night", title: "The 'Special' Mission", description: "Shaked and yakir are going out to get laid while the rest of us go to sleep (Zzz...) 🤫😜", icon: "😏", type: "leisure" }
       ],
       packing: ["Passport & boarding pass", "Phone charger & power bank", "Entertainment for flight", "Light jacket for Vienna evening", "Comfortable shoes for walking"]
     },
@@ -220,13 +224,16 @@ const TRIP = {
         { name: "Liezen", coords: [47.570, 14.230], icon: "🚐", type: "drive" },
         { name: "Amstetten", coords: [48.120, 14.870], icon: "🚐", type: "drive" },
         { name: "St. Pölten", coords: [48.200, 15.630], icon: "🚐", type: "drive" },
-        { name: "The Social Hub Vienna", coords: [48.185, 16.378], icon: "🏨", type: "end" }
+        { name: "The Social Hub Vienna", coords: [48.185, 16.378], icon: "🏨", type: "end" },
+        { name: "Salm Bräu", coords: [48.194, 16.382], icon: "🍺", type: "food" },
+        { name: "Puerstner", coords: [48.205, 16.375], icon: "🍽️", type: "food" },
+        { name: "1516 Brewing Company", coords: [48.204, 16.371], icon: "🍻", type: "food" }
       ],
       activities: [
         { time: "Morning", title: "Loser Mountain Hike", description: "4.5 km hike up Loser Mountain. Don't let the name fool you — it's a WINNER! ⛰️", icon: "🥾", type: "hike", link: "https://www.google.com/maps/place/Loser,+Austria/" },
         { time: "Midday", title: "Lunch at Loser Alm", description: "The famous 'Loser beer' and alpine food with panoramic views", icon: "🍽️", type: "food", link: "https://www.google.com/maps/search/Loser+Alm+Altaussee/" },
         { time: "Afternoon", title: "The Drive Back", description: "3h 40m drive back to Vienna. Crank the road trip playlist!", icon: "🚐", type: "drive" },
-        { time: "Evening", title: "Vienna Night Out", description: "LAST NIGHT TOGETHER! Dinner in Vienna and party! 🎉🥂", icon: "🎉", type: "leisure" }
+        { time: "Evening", title: "Final Night Celebration", description: "Choose your last meal/drinks: 1. Salm Bräu, 2. Puerstner, 3. 1516 Brewing Company. Let's make it legendary! 🎉🍻", icon: "🎉", type: "leisure" }
       ],
       packing: ["Hiking boots (last time!)", "All bags packed for Vienna", "Snacks for the drive", "Party clothes for Vienna night"]
     },
